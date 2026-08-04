@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Pesquisa Culturama</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
           <input id="age" name="userAge" min="12" max="100" />
           <br />
           <label for="birth">Data Nascimento</label>
-          <input id="birth" name="userBirth" />
+          <input id="birth" type="date" name="userBirth" />
           <br />
           <label for="email">E-mail</label>
           <input id="email" name="userEmail" required />
@@ -108,6 +109,17 @@
           <label for="linkedin">LinkedIn</label><br>
           <input id="x" type="checkbox" name="social" value="x">
           <label for="x">X</label><br>
+
+          <label for="musicStyle">Estilos musicais:</label>
+          <input type="text" name="userMusicStyle" id="musicStyle" list="musicList">
+          <datalist id="musicList">
+            <option value="Rock">
+            <option value="Pop">
+            <option value="Sertanejo">
+            <option value="Pagode">
+            <option value="Samba">
+            <option value="Hard_punk">
+          </datalist>
 
         </fieldset>
         <button type="submit">Enviar</button>
