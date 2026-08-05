@@ -50,7 +50,11 @@
               name="userPhoneNumber"
               pattern="[0-9]{11}"
               placeholder="DDD+number no espace or hifen"
-            />
+            aria-describedby="phoneHelp" />
+            <small id="phoneHelp"
+              >Preencha com 11 digitos no formato: DDD + números sem espaço ou
+              hífen</small
+            >
             <br />
             <label for="image">Upload de foto</label>
             <input id="image" type="file" accept="image/*" name="userImage" />
