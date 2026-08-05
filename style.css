@@ -49,31 +49,43 @@ label {
   display: inline-block;
   margin-bottom: 5px;
 }
-input, select, textarea {
+input[type="tel"], input[type="file"] {
+  margin-bottom: 0;
+}
+small {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+input,
+select,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #cccccc;
-
 }
 textarea {
   min-height: 100px;
 }
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   width: auto;
 }
-input[type="color"]{
+input[type="color"] {
   width: 50px;
   padding: 0 5px;
 }
 
-
-input:invalid, select:invalid, textarea:invalid{
+input:invalid,
+select:invalid,
+textarea:invalid {
   border-color: red;
 }
 
-input:valid, select:valid, textarea:valid{
+input:valid,
+select:valid,
+textarea:valid {
   border-color: green;
 }
 button {
@@ -86,11 +98,11 @@ button {
   cursor: pointer;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background-color: green;
   color: #ffffff;
 }
-button[type="reset"]:hover{
+button[type="reset"]:hover {
   background-color: orangered;
   color: #ffffff;
 }
